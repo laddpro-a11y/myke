@@ -1,0 +1,30 @@
+productName: MYKE AI V1
+appId: ai.myke.desktop
+asar: false
+copyright: "MYKE AI 2026"
+
+directories:
+  output: dist
+  buildResources: build
+
+files:
+  - "frontend/**"
+  - "backend/**"
+  - "myke-gpt/**"
+  - "desktop/**"
+  - "package.json"
+  - "!**/*.test.*"
+  - "!**/*.spec.*"
+
+win:
+  artifactName: "MYKE AI V1 Setup.${version}.exe"
+  target:
+    - nsis
+
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: "MYKE AI V1"

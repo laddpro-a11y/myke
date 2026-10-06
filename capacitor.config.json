@@ -1,0 +1,52 @@
+{
+  "": {
+    "ios": {
+      "contentCap": "YES",
+      "startOnLaunch": "NO",
+      "statusBarOverlays": "YES",
+      "permissions": [
+        "Camera",
+        "Microphone",
+        "Notifications",
+        "Location"
+      ]
+    },
+    "android": {
+      "softKeyboardMode": "resize",
+      "useFullScreen": "NO",
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    }
+  },
+  "appId": "com.myke.ai.v1",
+  "appName": "MYKE AI",
+  "bundledWebRuntime": false,
+  "plugins": {
+    "Camera": {
+      "photosPermission": "Allow MYKE AI to access your photos?",
+      "runtimePermissions": [
+        "camera",
+        "photos"
+      ]
+    },
+    "Geolocation": {
+      "permissionPrompt": "Allow $(appname) to access your location?"
+    },
+    "LocalNotifications": {
+      "icon": "mipmap/ic_launcher",
+      "smallIcon": "mipmap/ic_launcher",
+      "soundName": "notification"
+    },
+    "PushNotifications": {
+      "senderId": "123456789",
+      "vAPID": "BK_abcdefghijklmnopqrstuvwxyz1234567890"
+    },
+    "Haptics": {}
+  }
+}
